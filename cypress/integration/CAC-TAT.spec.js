@@ -113,7 +113,7 @@ describe('Central de Atendimento ao Cliente TAT', function () {
   // aqui a mesma coisa, por nao ter especificado eu pego os dois
   //checo os dois, porem eu tiro o check somente do ultimo, e por ordem da linha de código ao passar o should apos
   //o ultimo o mesmo ja verifica se ele nao esta valido
-  it.only('marca ambos checkboxes, depois desmarca o último', function () {
+  it('marca ambos checkboxes, depois desmarca o último', function () {
     cy.get('input[type="checkbox"]')
       .check()
       .last()
